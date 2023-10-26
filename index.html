@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>blomster_butikk</title>
     <link rel="stylesheet" href="stylesheet.css">
-    <script src="søkefungsjon.js"></script>
+    <script src="soke-knapp.js"></script>
     <script src="mus-over-bilde.js"></script>
 </head>
 <body>
@@ -19,10 +19,11 @@
         <img src="bilder/ikoner/bruker.png" alt="bruker_icon" id="bruker_ikon">
 
         <img src="bilder/ikoner/sok.png" alt="søk_knap" id="sok_ikon">
-        <div class="search-wrapper" id="sok_gruppe">
-            <label for="search">Search Users</label>
-            <input type="search" id="search" data-search>
+        <div id="sok-gruppe">
+            <input type="text" id="searchInput" placeholder="Søk etter blomst">
+            <button id="searchButton">Søk</button>
         </div>
+
         <h1 id="log_inn">log inn</h1>
         <img src="bilder/ikoner/Hamburger_icon.svg.png" alt="Hamburger_icon" id="Hamburger_icon">
     </div>
@@ -33,56 +34,69 @@
         <div class="bilde">
             <h1>699 kr</h1>
             <a href="index-filer/jennifer-coffin-grey.html">
-            <img src="bilder/blomster/jennifer-coffin-grey-sb47Ya9p4c4-unsplash.jpg" alt="flover" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+            <img src="bilder/blomster/jennifer-coffin-grey-sb47Ya9p4c4-unsplash.jpg" alt="flover" id="jennifer-coffin-grey"
+            onmouseover="bigImg(this)" onmouseout="normalImg(this)">
         </a>
         </div>
         <div class="test_1">
             <h1>349 kr</h1>
-            <img src="bilder/blomster/sixteen-miles-out-tEZU-GkGMTs-unsplash.png" alt="blomster_i_en_bøtte" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+            <img src="bilder/blomster/sixteen-miles-out-tEZU-GkGMTs-unsplash.png" alt="blomster_i_en_bøtte" 
+            onmouseover="bigImg(this)" onmouseout="normalImg(this)">
         </div>
         <div class="test_2">
             <h1>449 kr</h1>
-            <img src="bilder/blomster/lilartsy-soBO_1Z6GJI-unsplash.png" alt=""onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+            <img src="bilder/blomster/lilartsy-soBO_1Z6GJI-unsplash.png" alt="liliartsy"
+            onmouseover="bigImg(this)" onmouseout="normalImg(this)">
         </div>
         <div class="test_3">
             <h1>449 kr</h1>
-            <img src="bilder/blomster/vanilje_flower.png" alt="vanilje_flower" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+            <img src="bilder/blomster/vanilje_flower.png" alt="vanilje_flower" 
+            onmouseover="bigImg(this)" onmouseout="normalImg(this)">
         </div>
         <div class="test_4">
             <h1>399 kr</h1>
-            <img src="bilder/blomster/rikonavt-oEWdQsbRVZk-unsplash.png" alt="rikonavt" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+            <img src="bilder/blomster/rikonavt-oEWdQsbRVZk-unsplash.png" alt="rikonavt"
+             onmouseover="bigImg(this)" onmouseout="normalImg(this)">
         </div>
         <div class="test_5">
             <h1>399 kr</h1>
-            <img src="bilder/blomster/red_flower.png" alt="red_flower" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+            <img src="bilder/blomster/red_flower.png" alt="red_flower"
+             onmouseover="bigImg(this)" onmouseout="normalImg(this)">
         </div>
         <div class="test_6">
             <h1>549 kr</h1>
-            <img src="bilder/blomster/pink_flower_pot.png" alt="pink_flower_pot" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+            <img src="bilder/blomster/pink_flower_pot.png" alt="pink_flower_pot" 
+            onmouseover="bigImg(this)" onmouseout="normalImg(this)">
         </div>
         <div class="test_7">
             <h1>499 kr</h1>
-            <img src="bilder/blomster/green_plant.png" alt="green_plant" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+            <img src="bilder/blomster/green_plant.png" alt="green_plant" 
+            onmouseover="bigImg(this)" onmouseout="normalImg(this)">
         </div>
         <div class="test_8">
             <h1>399 kr</h1>
-            <img src="bilder/blomster/glass_flower.png" alt="glass_flower" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+            <img src="bilder/blomster/glass_flower.png" alt="glass_flower"
+             onmouseover="bigImg(this)" onmouseout="normalImg(this)">
         </div>
         <div class="test_9">
             <h1>599 kr</h1>
-            <img src="bilder/blomster/Flower_ting.png" alt="Flower_ting" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+            <img src="bilder/blomster/Flower_ting.png" alt="Flower_ting"
+             onmouseover="bigImg(this)" onmouseout="normalImg(this)">
         </div>
         <div class="test_10">
             <h1>499 kr</h1>
-            <img src="bilder/blomster/flower_and_green.png" alt="flower_and_green" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+            <img src="bilder/blomster/flower_and_green.png" alt="flower_and_green"
+             onmouseover="bigImg(this)" onmouseout="normalImg(this)">
         </div>
         <div class="test_11">
             <h1>349 kr</h1>
-            <img src="bilder/blomster/blue_flower.png" alt="blue_flower" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+            <img src="bilder/blomster/blue_flower.png" alt="blue_flower" 
+            onmouseover="bigImg(this)" onmouseout="normalImg(this)">
         </div>
-        <div class="test_12">
+        <div class="test_12" id="ost">
             <h1>449 kr</h1>
-            <img src="bilder/blomster/orange_flower.png" alt="orange_flower" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+            <img src="bilder/blomster/orange_flower.png" alt="orange_flower"
+             onmouseover="bigImg(this)" onmouseout="normalImg(this)">
         </div>
     </div>
 </body>

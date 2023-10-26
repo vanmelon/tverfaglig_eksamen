@@ -40,7 +40,7 @@ html, body{
     padding-top: 2px;
 }
 
-#sok_gruppe{
+#sok-gruppe{
     grid-column-start:3 ;
     grid-column-end: 6;
     grid-row-start: 1;

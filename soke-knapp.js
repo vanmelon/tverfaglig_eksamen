@@ -1,31 +1,24 @@
-/** fårstår ikke åsen dette fungerer men jeg prøvde */
+// Få referanser til søkeknapp og inputfelt
+var searchButton = document.getElementById("searchButton");
+var searchInput = document.getElementById("searchInput");
 
-const userhovedTemplate = document.querySelector("[data-user-template]")
-const userhovedContainer = document.querySelector("[data-user-hoveds-container]")
-const searchInput = document.querySelector("[data-search]")
+// Legg til en klikk-hendelse for søkeknappen
+searchButton.addEventListener("click", function() {
+    var searchTerm = searchInput.value.toLowerCase(); // Konverter til små bokstaver for å unngå case-sensitivitet
 
-let users = []
-
-searchInput.addEventListener("input", e => {
-  const value = e.target.value.toLowerCase()
-  users.forEach(user => {
-    const isVisible =
-      user.name.toLowerCase().includes(value) ||
-      user.email.toLowerCase().includes(value)
-    user.element.classList.toggle("hide", !isVisible)
-  })
-})
-
-fetch("index.html")
-  .then(res => res.json())
-  .then(data => {
-    users = data.map(user => {
-      const hoved = userhovedTemplate.content.cloneNode(true).children[0]
-      const header = hoved.querySelector("[data-header]")
-      const body = hoved.querySelector("[data-body]")
-      header.textContent = user.name
-      body.textContent = user.email
-      userhovedContainer.append(hoved)
-      return { name: user.name, email: user.email, element: hoved }
-    })
-  })
+    // Sjekk hvilken blomst som tilsvarer søket
+    switch (searchTerm) {
+        case "jennifer-coffin-grey":
+            window.location.href = "#jennifer-coffin-grey";
+            break;
+        case "tulip":
+            window.location.href = "#tulip";
+            break;
+        case "ost":
+            window.location.href = "#ost";
+            break;
+        // Legg til flere saker for andre blomster
+        default:
+            alert("Ingen samsvar funnet.");
+    }
+});
