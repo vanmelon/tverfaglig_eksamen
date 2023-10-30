@@ -50,6 +50,16 @@ html, body{
     background-color: lightgreen;
     padding-top: 2px;
 }
+    #searchInputID{
+        width: 400px;
+        height: 26px;
+    }
+    #searchButtonID{
+        width: 90px;
+        height: 32px;
+        text-transform: uppercase;
+    }
+
 #Hamburger_icon{
     grid-column-start:1;
     grid-row-start: 1;
