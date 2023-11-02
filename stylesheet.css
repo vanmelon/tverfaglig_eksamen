@@ -87,8 +87,6 @@ html, body{
     text-align: center;
     background-color: lightblue;
     margin-top: 20px;
-    display: none;
-    opacity: 0;
     position: absolute;
   }
 /* bildene av blomstrene + priser */
