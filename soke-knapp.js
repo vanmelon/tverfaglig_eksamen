@@ -14,11 +14,41 @@ document.addEventListener("DOMContentLoaded", function() {
             case "orkide":
                 window.location.href = "#orkide";
                 break;
-            case "tulip":
-                window.location.href = "#tulip";
+            case "margeritt":
+                window.location.href = "#margeritt";
                 break;
-            case "ost":
-                window.location.href = "#ost";
+            case "eukalyptus":
+                window.location.href = "#eukalyptus";
+                break;
+            case "hage tulipan":
+                window.location.href = "#hage_tulipan";
+                break;
+            case "lilla tulipan":
+                window.location.href = "#lilla_tulipaner";
+                break; 
+            case "orange blomsterbukett":
+                window.location.href = "#orange_blomsterbukett";
+                break; 
+            case "rosa pion":
+                window.location.href = "#pion_rosa";
+                break;
+            case "røde tulipan":
+                window.location.href = "#red_tulipan";
+                break;  
+            case "pioner":
+                window.location.href = "#pioner";
+                break; 
+            case "rød blomsterbukett":
+                window.location.href = "#rød_blomsterbukett";
+                break; 
+            case "rosa nelikk":
+                window.location.href = "#rosa_nelikk";
+                break; 
+            case "spraglet tulipan":
+                window.location.href = "#tulipan_spraglete_hvit_rosa";
+                break; 
+            case "vanilje":
+                window.location.href = "#vanilje_blomst";
                 break;
             // Legg til flere saker for andre blomster
             default:
