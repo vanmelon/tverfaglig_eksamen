@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Sjekk hvilken blomst som tilsvarer søket
         switch (searchTerm) {
-            case "jennifer-coffin-grey":
-                window.location.href = "#jennifer-coffin-grey";
+            case "orkide":
+                window.location.href = "#orkide";
                 break;
             case "tulip":
                 window.location.href = "#tulip";

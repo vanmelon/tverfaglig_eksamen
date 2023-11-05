@@ -8,11 +8,10 @@ function bigImg(x) {
     x.style.width = "100%";
   }
   function textOverBildet() {
-    var x = document.getElementById("textOverBildetID");
+    var x = document.getElementsByClassName("textOverBildetCLASS");
     if (x.style.display === "block") {
       x.style.display = "none";
     } else {
       x.style.display = "block";
     }
-    console.log("fungerer")
   }

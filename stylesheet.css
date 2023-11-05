@@ -2,7 +2,7 @@ html, body{
     width: 100%;
     margin: 0;
 }
-/* nav bar */
+/* dette er nav baren */
 .topp {
     width: 100%;
     height: 40px;
@@ -39,7 +39,7 @@ html, body{
     background-color: lightgreen;
     padding-top: 2px;
 }
-
+/*søke fungsjonen*/
 #sok-gruppe{
     grid-column-start:3 ;
     grid-column-end: 6;
@@ -69,7 +69,7 @@ html, body{
     background-color: lightgreen;
     padding-top: 2px;
 }
-
+/*dettet er hvor bildene er i ett grid*/
 .hoved {
     height: 100%;
     display: grid;
@@ -80,21 +80,31 @@ html, body{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
   }
+
+/*teksten under bildet.*/
 .bilde footer {
     position: sticky;
 }
-
-  #textOverBildetID {
+[class^="textOverBildetCLASS"] {
     width: 100%;
-    padding: 50px 0;
-    text-align: center;
-    background-color: lightblue;
-    margin-top: 20px;
+    text-align: left;
+    background: rgba(68, 70, 32, 0.35);
     position: absolute;
     bottom:  0;
-    margin-top: 50px;
   }
+  [class^="textOverBildetCLASS"] h2 {
+    font-size: 30px;
+    margin: 2px;
+  }
+  [class^="textOverBildetCLASS"] h3 {
+    width: 100%;
+    font-size: 12px;
+    padding: 5px;
+    margin: 2px;
+}
+
 /* bildene av blomstrene + priser */
+
 /* det store bildet */
 .bilde {
 grid-column-start: 3;
@@ -119,9 +129,6 @@ grid-row-end: 3;
         font-size: 60px;
     }
 
- .test_1 h2 {
-          position: absolute;
- }
 /* de små bildene */
 [class^="test_"] {
     width: 100%;
