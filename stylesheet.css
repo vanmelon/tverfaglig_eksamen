@@ -25,7 +25,7 @@ html, body{
     margin: 3px;
     height: 35px;
     margin-bottom: 6px;
-background: #303030b2;
+    background: #303030b2;
     color: #3ea6ff;
     border-radius: 20px;
     text-align: center;
@@ -50,7 +50,7 @@ background: #303030b2;
     padding-top: 2px;
 }
     #searchInputID{
-        width: 400px;
+        width: 200px;
         height: 26px;
     }
     #searchButtonID{
@@ -89,6 +89,7 @@ background: #303030b2;
     background: rgba(68, 70, 32, 0.35);
     position: absolute;
     bottom:  0;
+    border-radius: 2px;
   }
   [class^="textOverBildetCLASS"] h2 {
     font-size: 30px;
